@@ -31,6 +31,8 @@
             this.lblHolaMundo = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btAceptar = new System.Windows.Forms.Button();
+            this.btSuma = new System.Windows.Forms.Button();
+            this.btSuma2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblHolaMundo
@@ -60,15 +62,38 @@
             this.btAceptar.UseVisualStyleBackColor = true;
             this.btAceptar.Click += new System.EventHandler(this.btAceptar_Click);
             // 
-            // Form1
+            // btSuma
+            // 
+            this.btSuma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btSuma.Location = new System.Drawing.Point(216, 14);
+            this.btSuma.Name = "btSuma";
+            this.btSuma.Size = new System.Drawing.Size(75, 23);
+            this.btSuma.TabIndex = 3;
+            this.btSuma.Text = "Suma";
+            this.btSuma.UseVisualStyleBackColor = true;
+            this.btSuma.Click += new System.EventHandler(this.btSuma_Click);
+            // 
+            // btSuma2
+            // 
+            this.btSuma2.Location = new System.Drawing.Point(298, 13);
+            this.btSuma2.Name = "btSuma2";
+            this.btSuma2.Size = new System.Drawing.Size(75, 23);
+            this.btSuma2.TabIndex = 4;
+            this.btSuma2.Text = "Suma 2";
+            this.btSuma2.UseVisualStyleBackColor = true;
+            this.btSuma2.Click += new System.EventHandler(this.btSuma2_Click);
+            // 
+            // PrimerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 102);
+            this.ClientSize = new System.Drawing.Size(421, 102);
+            this.Controls.Add(this.btSuma2);
+            this.Controls.Add(this.btSuma);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblHolaMundo);
-            this.Name = "Form1";
+            this.Name = "PrimerForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -80,6 +105,8 @@
         private System.Windows.Forms.Label lblHolaMundo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btAceptar;
+        private System.Windows.Forms.Button btSuma;
+        private System.Windows.Forms.Button btSuma2;
     }
 }
 
